@@ -1,0 +1,5 @@
+export const SET_USERS = 'SET_USERS'
+export const REMOVE_USER = 'REMOVE_USER'
+export const SET_USER_SEARCH_VALUE = 'SET_USER_SEARCH_VALUE'
+export const OPEN_MODAL = 'OPEN_MODAL'
+export const CLOSE_MODAL = 'CLOSE_MODAL'
