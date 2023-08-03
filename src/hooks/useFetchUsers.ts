@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import { UsersAPI } from "../API";
 import { setUsers } from "../store";
 import { useAppDispatch } from "./useAppDispatch";
