@@ -15,6 +15,7 @@ const Search = () => {
 
   const handleReset = () => {
     setSearchValue('')
+    dispatch(setUserSearchValue({ value: '' }))
     fetchUsers()
   }
 
