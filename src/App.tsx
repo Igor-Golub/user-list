@@ -5,7 +5,7 @@ import useModal from "./hooks/useModal";
 import Modal from "./components/Modal";
 
 function App() {
-  const { fetchUsers } = useFetchUsers()
+  const { loading, fetchUsers } = useFetchUsers()
   const { isOpen, data } = useModal()
 
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
       {isOpen && <Modal data={data} />}
       <Layout>
         <Search />
-        <UserList />
+        { !loading ? <UserList /> : <h2>Loading...</h2> }
       </Layout>
     </>
   );
